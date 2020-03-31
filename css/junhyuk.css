@@ -1,0 +1,52 @@
+body {
+  padding-top: 0px;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.profile-img {
+  margin-bottom: 20px;
+}
+
+
+/*.publication-item {
+  color: #474a4c;
+  line-height: 1.4;
+}
+.publication-item .lead {
+  color: #373a3c;
+  font-weight: 600;
+}
+*/
+.publication-item {
+  color: #474a4c;
+  line-height: 1.4;
+}
+.publication-item .lead {
+  color: #373a3c;
+  font-weight: 500;
+}
+
+.award-item {
+  color: #474a4c;
+  line-height: 1.4;
+}
+.award-item .lead {
+  color: #373a3c;
+  font-weight: 500;
+}
+
+a {
+  color: #2E86C1;
+}
+
+img.rounded-corners {
+  border-radius: 70px;
+}
+
+li span {
+  position: relative;
+  left: -17px;
+}

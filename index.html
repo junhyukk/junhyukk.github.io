@@ -3,146 +3,184 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     <link rel="stylesheet" href="css/junhyuk.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
-    <style>
-      #link { color: #000000; } /* CSS link color */
-    </style>
-
     <title>Jun-Hyuk Kim</title>
   </head>
 
-  <body>
-    <div class="container section">
-      <h2><br>Jun-Hyuk Kim
-        <a id=link href="http://scholar.google.com/citations?user=A0io6mQAAAAJ&hl=en" target="_blank" color=#000000><i class="fas fa-graduation-cap"></i></a>
-        <a id=link href="http://github.com/junhyukk/" target="_blank"><i class="fab fa-github"></i></a>
-      </h2>
-      <hr width="100%" align="left" color="#EAECEE">
-      <div class="row featurette">
-        <div class="col-md-3 profile-img text-center">
-          <img src="./junhyuk_kim.jpg" class="rounded-circle img-fluid" width="250">
+  <body data-spy="scroll" data-target="#my_navbar" data-offset="90">
+
+    <!-- Navigaton bar -->
+    <nav class="shadow-sm navbar navbar-expand-lg navbar-light bg-light fixed-top" id="my_navbar">
+      <div class="container">
+        <!-- Navigaton brand -->
+        <a class="navbar-brand font-weight-bold" href="#">Jun-Hyuk Kim</a>
+        <a class="navbar-brand" href="http://scholar.google.com/citations?user=A0io6mQAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+        <a class="navbar-brand mr-auto" href="http://github.com/junhyukk/" target="_blank"><i class="fab fa-github"></i></a>
+
+        <!-- Navtigation toggler button-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my_navbar_contents" aria-controls="my_navbar_contents" aria-expanded="false" aria-label="Toggle navigation">
+          <span ><i class="fas fa-bars"></i></span>
+        </button>
+
+        <!-- Navtigation toggler contents -->
+        <div class="collapse navbar-collapse" id="my_navbar_contents">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" href="#home"><strong>Home</strong></a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" href="#publications"><strong>Publications</strong></a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link" href="#awards"><strong>Awards</strong></a>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-9">
-          <strong>    
-          <p class="lead">I am a PhD student at the <a href="http://mcml.yonsei.ac.kr/" target="_blank">Multimedia Computing and Machine Learning (MCML) Group</a> of <a href="https://www.yonsei.ac.kr/en_sc/" target="_blank">Yonsei University</a> under the supervision of Prof. Jong-Seok Lee. I received the B.S. degree in the <a href="http://sit.yonsei.ac.kr/" target="_blank">School of Integrated Technology</a> from Yonsei University, South Korea, in 2015.<br><br> 
-          My research interests include low-level computer vision and deep learning.</strong>
-          <br><br><i class="far fa-envelope"></i> junhyuk.kim@yonsei.ac.kr
-          </p>
+      </div>
+    </nav>
+
+    <!-- Section: home -->
+    <section class="container section" id="home">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center">
+          <img src="junhyuk_kim.jpg" class="border-7 rounded-circle w-75">
+          <div class="pt-1 pb-3">
+            <h3>Jun-Hyuk Kim</h3>
+            <h4 class="lead font-weight-normal">Ph.D. student</h4>
+            <h4 class="lead font-weight-light">junhyuk.kim@yonsei.ac.kr</h4>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <p class="lead font-weight-normal">
+            I am a PhD student at the <a href="http://mcml.yonsei.ac.kr/" target="_blank">Multimedia Computing and Machine Learning (MCML) Group</a> of <a href="https://www.yonsei.ac.kr/en_sc/" target="_blank">Yonsei University</a> under the supervision of Prof. Jong-Seok Lee. I received the B.S. degree in the <a href="http://sit.yonsei.ac.kr/" target="_blank">School of Integrated Technology</a> from Yonsei University, South Korea, in 2015. My research interests include low-level computer vision and deep learning.
+          </p>    
         </div>
       </div>
       <hr width="100%" align="left" color="#EAECEE">
-    </div>
+    </section>
 
-    <div class="container section">
-      <h2><i class="far fa-newspaper"></i> Publications</h2><br>      
-      <h3><li><span>Preprints</span></li></h3>
-      <p class="publication-item">
-        <span class="lead">Lightweight and efficient image super-resolution with block state-based recursive network</span><br />
-        J.-H. Choi, <strong>J.-H. Kim</strong>, M. Cheon, J.-S. Lee<br />
-        <em>arXiv:1811.12546</em>, November 2018<br />
-        <a href="https://arxiv.org/abs/1811.12546" target="_blank"><i class="fas fa-external-link-square-alt"></i> arXiv</a> / <a href="https://github.com/idearibosome/tf-bsrn-sr" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </p>
-      <br />
+    <!-- Section: publications -->
+    <section class="container section" id="publications">
+      <h2><i class="fas fa-newspaper"></i> Publications</h2>
       
-      <h3><li><span>Journals</span></li></h3>
-      <p class="publication-item">
-        <span class="lead">MAMNet: Multi-path adaptive modulation network for image super-resolution</span><br />
-        <strong>J.-H. Kim</strong>, J.-H. Choi, M. Cheon, J.-S. Lee<br />
-        <em>Neurocomputing</em>, accepted<br />
-        <a href="https://arxiv.org/abs/1811.12043" target="_blank"><i class="fas fa-external-link-square-alt"></i> arXiv</a> / <a href="https://github.com/junhyukk/MAMNet-tensorflow" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </p>
-      <p class="publication-item">
-        <span class="lead">Deep learning-based image super-resolution considering quantitative and perceptual quality</span><br />
-        J.-H. Choi, <strong>J.-H. Kim</strong>, M. Cheon, J.-S. Lee<br />
-        <em>Neurocomputing</em>, accepted<br />
-        <a href="https://arxiv.org/abs/1809.04789" target="_blank"><i class="fas fa-external-link-square-alt"></i> arXiv</a> / <a href="https://github.com/idearibosome/tf-perceptual-eusr" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </p>    
-      <p class="publication-item">
-        <span class="lead">Prediction of car design perception using EEG and gaze patterns</span><br />
-        S.-E. Moon, <strong>J.-H. Kim</strong>, S.-W. Kim, J.-S. Lee<br />
-        <em>IEEE Transactions on Affective Computing</em>, accepted<br />
-        <a href="https://doi.org/10.1109/TAFFC.2019.2901733" target="_blank"><i class="fas fa-external-link-square-alt"></i> Detail</a>
-      </p>  
-      <br />
-      
-      <h3><li><span>Conferences</span></li></h3>
-      <p class="publication-item">
-        <span class="lead">Efficient deep learning-based lossy image compression via asymmetric autoencoder and pruning</span><br />
-        <strong>J.-H. Kim</strong>, J.-H. Choi, J. Chang, J.-S. Lee<br />
-        <em>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em>, May 2020
-      </p>
-      <p class="publication-item">
-        <span class="lead">SRZoo: An integrated repository for super-resolution using deep learning</span><br />
-        J.-H. Choi, <strong>J.-H. Kim</strong>, J.-S. Lee<br />
-        <em>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em>, May 2020<br />
-        <a href="https://github.com/idearibosome/srzoo" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </p>
-      <p class="publication-item">
-        <span class="lead">Evaluating robustness of deep image super-resolution against adversarial attacks</span><br />
-        J.-H. Choi, H. Zhang, <strong>J.-H. Kim</strong>, C.-J. Hsieh, J.-S. Lee<br />
-        <em>IEEE International Conference on Computer Vision (ICCV)</em>, pp. 303-311, October 2019<br />
-        <a href="http://openaccess.thecvf.com/content_ICCV_2019/html/Choi_Evaluating_Robustness_of_Deep_Image_Super-Resolution_Against_Adversarial_Attacks_ICCV_2019_paper.html" target="_blank"><i class="fas fa-external-link-square-alt"></i> Detail</a> / <a href="https://arxiv.org/abs/1904.06097" target="_blank"><i class="fas fa-external-link-square-alt"></i> arXiv</a>
-      </p>
-      <p class="publication-item">
-        <span class="lead">Deep learning-based super-resolution for digital comics</span><br />
-        <strong>J.-H. Kim</strong>, J.-H. Choi, C.-H. Seo, J. Chang, J.-S. Lee<br />
-        <em>SIGGRAPH Asia 2018 Posters</em>, Article 19, December 2018<br />
-        <a href="https://doi.org/10.1145/3283289.3283337" target="_blank"><i class="fas fa-external-link-square-alt"></i> Detail</a>
-      </p>
-      <p class="publication-item">
-        <span class="lead">Generative adversarial network-based image super-resolution using perceptual content losses</span><br />
-        M. Cheon, <strong>J.-H. Kim</strong>, J.-H. Choi, J.-S. Lee<br />
-        <em>European Conference on Computer Vision (ECCV) Workshops</em>, pp. 51-62, September 2018<br />
-        <a href="https://doi.org/10.1007/978-3-030-11021-5_4" target="_blank"><i class="fas fa-external-link-square-alt"></i> Detail</a> / <a href="http://arxiv.org/abs/1809.04783" target="_blank"><i class="fas fa-external-link-square-alt"></i> arXiv</a> / <a href="https://github.com/manricheon/eusr-pcl-tf" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </p>
-      <p class="publication-item">
-        <span class="lead">Deep residual network with enhanced upscaling module for super-resolution</span><br />
-        <strong>J.-H. Kim</strong>, J.-S. Lee<br />
-        <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops</em>, pp. 913-921, Jun. 2018<br />
-        <a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/w13/html/Kim_Deep_Residual_Network_CVPR_2018_paper.html" target="_blank"><i class="fas fa-external-link-square-alt"></i> Detail</a> / <a href="https://github.com/junhyukk/EUSR-Tensorflow" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </p>
-      <p class="publication-item">
-        <span class="lead">NTIRE 2018 challenge on single image super-resolution: methods and results</span><br />
-        R. Timofte et al. (including <strong>J.-H. Kim</strong>)<br />
-        <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops</em>, pp. 965-976, Jun. 2018<br />
-        <a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/w13/html/Kim_Deep_Residual_Network_CVPR_2018_paper.html" target="_blank"><i class="fas fa-external-link-square-alt"></i> Detail</a>
-      </p>
-      <p class="publication-item">
-        <span class="lead">Assessing product design using photos and real products</span><br />
-        S.-E. Moon, <strong>J.-H. Kim</strong>, S.-W. Kim, J.-S. Lee<br />
-        <em>ACM Conf. Human Factors in Computing Systems (CHI), Extended Abstract</em>, pp. 1100-1107, May 2017<br />
-        <a href="https://doi.org/10.1145/3027063.3053336" target="_blank"><i class="fas fa-external-link-square-alt"></i> Detail</a>
-      </p>
-      <p class="publication-item">
-        <span class="lead">Travel photo album summarization based on aesthetic quality, interestingness, and memorableness</span><br />
-        <strong>J.-H. Kim</strong>, J.-S. Lee<br />
-        <em>APSIPA Annual Summit and Conference</em>, Dec. 2016<br />
-        <a href="https://doi.org/10.1109/APSIPA.2016.7820889" target="_blank"><i class="fas fa-external-link-square-alt"></i> Detail</a>
-      </p>
-    </div>
-    
-    <div class="container section">
-      <h2><i class="fas fa-medal"></i> Awards</h2>
-      <br />
-      <p class="award-item">
-        <span class="lead">2nd Place (Region 1)</span><br />
-        Yonsei-MCML team<br />
-        <em>Super-Resolution Challenge on Perceptual Image Restoration and Manipulation (PIRM)</em>, in conjunction with ECCV, September 2018<br />
-        <a href="https://www.pirm2018.org/PIRM-SR.html#leaderboard" target="_blank"><i class="fas fa-external-link-square-alt"></i> Leaderboard</a> / <a href="https://github.com/manricheon/eusr-pcl-tf" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </p>
-      <p class="award-item">
-        <span class="lead">2nd Place (Region 2)</span><br />
-        Yonsei-MCML team<br />
-        <em>Super-Resolution Challenge on Perceptual Image Restoration and Manipulation (PIRM)</em>, in conjunction with ECCV, September 2018<br />
-        <a href="https://www.pirm2018.org/PIRM-SR.html#leaderboard" target="_blank"><i class="fas fa-external-link-square-alt"></i> Leaderboard</a> / <a href="https://github.com/idearibosome/tf-perceptual-eusr" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </p> 
-    </div>
+      <!-- Sub-section: preprints -->
+      <section class="sub-section">      
+        <h3><li><span>Preprints</span></li></h3>
+        <p class="publication-item">
+          <span class="lead">Lightweight and efficient image super-resolution with block state-based recursive network</span><br />
+          J.-H. Choi, <strong>J.-H. Kim</strong>, M. Cheon, J.-S. Lee<br />
+          <em>arXiv:1811.12546</em>, November 2018<br />
+          <a href="https://arxiv.org/abs/1811.12546" target="_blank"><i class="fas fa-external-link-square-alt"></i> arXiv</a> / <a href="https://github.com/idearibosome/tf-bsrn-sr" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </p>
+      </section>
+
+      <!-- Sub-section: journals -->
+      <section class="sub-section">      
+        <h3><li><span>Journals</span></li></h3>
+        <p class="publication-item">
+          <span class="lead">MAMNet: Multi-path adaptive modulation network for image super-resolution</span><br />
+          <strong>J.-H. Kim</strong>, J.-H. Choi, M. Cheon, J.-S. Lee<br />
+          <em>Neurocomputing</em>, accepted<br />
+          <a href="https://arxiv.org/abs/1811.12043" target="_blank"><i class="fas fa-external-link-square-alt"></i> arXiv</a> / <a href="https://github.com/junhyukk/MAMNet-tensorflow" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </p>
+        <p class="publication-item">
+          <span class="lead">Deep learning-based image super-resolution considering quantitative and perceptual quality</span><br />
+          J.-H. Choi, <strong>J.-H. Kim</strong>, M. Cheon, J.-S. Lee<br />
+          <em>Neurocomputing</em>, accepted<br />
+          <a href="https://arxiv.org/abs/1809.04789" target="_blank"><i class="fas fa-external-link-square-alt"></i> arXiv</a> / <a href="https://github.com/idearibosome/tf-perceptual-eusr" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </p>    
+        <p class="publication-item">
+          <span class="lead">Prediction of car design perception using EEG and gaze patterns</span><br />
+          S.-E. Moon, <strong>J.-H. Kim</strong>, S.-W. Kim, J.-S. Lee<br />
+          <em>IEEE Transactions on Affective Computing</em>, accepted<br />
+          <a href="https://doi.org/10.1109/TAFFC.2019.2901733" target="_blank"><i class="fas fa-external-link-square-alt"></i> Detail</a>
+        </p>  
+      </section>
+
+      <!-- Sub-section: conferences -->   
+      <section class="sub-section">      
+        <h3><li><span>Conferences</span></li></h3>
+        <p class="publication-item">
+          <span class="lead">Efficient deep learning-based lossy image compression via asymmetric autoencoder and pruning</span><br />
+          <strong>J.-H. Kim</strong>, J.-H. Choi, J. Chang, J.-S. Lee<br />
+          <em>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em>, May 2020
+        </p>
+        <p class="publication-item">
+          <span class="lead">SRZoo: An integrated repository for super-resolution using deep learning</span><br />
+          J.-H. Choi, <strong>J.-H. Kim</strong>, J.-S. Lee<br />
+          <em>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em>, May 2020<br />
+          <a href="https://github.com/idearibosome/srzoo" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </p>
+        <p class="publication-item">
+          <span class="lead">Evaluating robustness of deep image super-resolution against adversarial attacks</span><br />
+          J.-H. Choi, H. Zhang, <strong>J.-H. Kim</strong>, C.-J. Hsieh, J.-S. Lee<br />
+          <em>IEEE International Conference on Computer Vision (ICCV)</em>, pp. 303-311, October 2019<br />
+          <a href="http://openaccess.thecvf.com/content_ICCV_2019/html/Choi_Evaluating_Robustness_of_Deep_Image_Super-Resolution_Against_Adversarial_Attacks_ICCV_2019_paper.html" target="_blank"><i class="fas fa-external-link-square-alt"></i> Detail</a> / <a href="https://arxiv.org/abs/1904.06097" target="_blank"><i class="fas fa-external-link-square-alt"></i> arXiv</a>
+        </p>
+        <p class="publication-item">
+          <span class="lead">Deep learning-based super-resolution for digital comics</span><br />
+          <strong>J.-H. Kim</strong>, J.-H. Choi, C.-H. Seo, J. Chang, J.-S. Lee<br />
+          <em>SIGGRAPH Asia 2018 Posters</em>, Article 19, December 2018<br />
+          <a href="https://doi.org/10.1145/3283289.3283337" target="_blank"><i class="fas fa-external-link-square-alt"></i> Detail</a>
+        </p>
+        <p class="publication-item">
+          <span class="lead">Generative adversarial network-based image super-resolution using perceptual content losses</span><br />
+          M. Cheon, <strong>J.-H. Kim</strong>, J.-H. Choi, J.-S. Lee<br />
+          <em>European Conference on Computer Vision (ECCV) Workshops</em>, pp. 51-62, September 2018<br />
+          <a href="https://doi.org/10.1007/978-3-030-11021-5_4" target="_blank"><i class="fas fa-external-link-square-alt"></i> Detail</a> / <a href="http://arxiv.org/abs/1809.04783" target="_blank"><i class="fas fa-external-link-square-alt"></i> arXiv</a> / <a href="https://github.com/manricheon/eusr-pcl-tf" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </p>
+        <p class="publication-item">
+          <span class="lead">Deep residual network with enhanced upscaling module for super-resolution</span><br />
+          <strong>J.-H. Kim</strong>, J.-S. Lee<br />
+          <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops</em>, pp. 913-921, Jun. 2018<br />
+          <a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/w13/html/Kim_Deep_Residual_Network_CVPR_2018_paper.html" target="_blank"><i class="fas fa-external-link-square-alt"></i> Detail</a> / <a href="https://github.com/junhyukk/EUSR-Tensorflow" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </p>
+        <p class="publication-item">
+          <span class="lead">NTIRE 2018 challenge on single image super-resolution: methods and results</span><br />
+          R. Timofte et al. (including <strong>J.-H. Kim</strong>)<br />
+          <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops</em>, pp. 965-976, Jun. 2018<br />
+          <a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/w13/html/Kim_Deep_Residual_Network_CVPR_2018_paper.html" target="_blank"><i class="fas fa-external-link-square-alt"></i> Detail</a>
+        </p>
+        <p class="publication-item">
+          <span class="lead">Assessing product design using photos and real products</span><br />
+          S.-E. Moon, <strong>J.-H. Kim</strong>, S.-W. Kim, J.-S. Lee<br />
+          <em>ACM Conf. Human Factors in Computing Systems (CHI), Extended Abstract</em>, pp. 1100-1107, May 2017<br />
+          <a href="https://doi.org/10.1145/3027063.3053336" target="_blank"><i class="fas fa-external-link-square-alt"></i> Detail</a>
+        </p>
+        <p class="publication-item">
+          <span class="lead">Travel photo album summarization based on aesthetic quality, interestingness, and memorableness</span><br />
+          <strong>J.-H. Kim</strong>, J.-S. Lee<br />
+          <em>APSIPA Annual Summit and Conference</em>, Dec. 2016<br />
+          <a href="https://doi.org/10.1109/APSIPA.2016.7820889" target="_blank"><i class="fas fa-external-link-square-alt"></i> Detail</a>
+        </p>
+      </section>
+    </section>
+
+    <!-- Section: awards -->
+    <section class="container section" id="awards">
+      <h2><i class="fas fa-award"></i> Awards</h2>
+      <section class="sub-section">      
+        <p class="award-item">
+          <span class="lead">2nd Place (Region 1)</span><br />
+          Yonsei-MCML team<br />
+          <em>Super-Resolution Challenge on Perceptual Image Restoration and Manipulation (PIRM)</em>, in conjunction with ECCV, September 2018<br />
+          <a href="https://www.pirm2018.org/PIRM-SR.html#leaderboard" target="_blank"><i class="fas fa-external-link-square-alt"></i> Leaderboard</a> / <a href="https://github.com/manricheon/eusr-pcl-tf" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </p>
+        <p class="award-item">
+          <span class="lead">2nd Place (Region 2)</span><br />
+          Yonsei-MCML team<br />
+          <em>Super-Resolution Challenge on Perceptual Image Restoration and Manipulation (PIRM)</em>, in conjunction with ECCV, September 2018<br />
+          <a href="https://www.pirm2018.org/PIRM-SR.html#leaderboard" target="_blank"><i class="fas fa-external-link-square-alt"></i> Leaderboard</a> / <a href="https://github.com/idearibosome/tf-perceptual-eusr" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        </p>
+      </section>
+    </section>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
   </body>
 </html>

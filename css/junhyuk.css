@@ -74,3 +74,13 @@ li span {
 .navbar-brand {
     margin-right: 0.7rem;
 }
+
+.news-header {
+	font-weight: bold;
+	white-space: nowrap;
+	text-align: right;
+}
+
+td{
+  padding-right: 10px;
+}
